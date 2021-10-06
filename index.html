@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="./photos/mylogo1.png" sizes="16x16" type="image/png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Portfolio</title>
+    <style>
+      h2{
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 1px;
+        margin: 10px;
+      }
+      a{
+        text-decoration: none;
+        color: gray;
+      }
+      .bgpic{
+        position: relative;
+        padding: 0;
+        border-radius: 10px 10px 0px 0px;
+      }
+      .mypic{
+        
+        width: 155px;
+        height: 150px;
+        border-radius: 50%;
+        padding: 0;
+        border: 4px solid white;
+        margin-left: 30px;
+        margin-top: -150px;
+        z-index: 1;
+      }
+      .container .filter-buttons ul li{
+        color: gray;
+        font-size: 15px;
+        font-weight: 550;
+        display: inline-block;
+        margin: 0px 10px;
+        cursor: pointer;
+        padding-bottom: 0px;
+      }
+      .container .filter-buttons ul li.active{
+        color: black;
+        border-bottom: 2px solid black;
+      }
+      .container .portfolio-gallery .item{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        position: relative;
+        padding: 8px;
+      }
+      .container .portfolio-gallery .item .inner{
+        position: relative;
+      }
+      .container .portfolio-gallery .item img{
+        width: 100%;
+        display: block;
+      }
+
+      .wrapper{
+        width: 100%;
+        background-color: white;
+        height: 200px;
+        position: relative;
+        border-left: 50px solid #0b74dde1;
+        border-radius: 15px;
+        padding: 15px;
+        color: rgba(0,0,0,0.5);
+        box-shadow: 5px 5px 10px rgb(180, 180, 180);
+
+        font-size: 14px;
+        display: inline-block;
+        display: flex; 
+        align-items: center; 
+        color: rgb(78, 78, 78);   
+      }
+      .wrapper h3{
+        font-size: 1rem;
+        color: white;
+        letter-spacing: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-left: -30px;
+        transform: rotate(270deg);
+        transform-origin: 0 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+<!---------------------------------------------LOGO SECTION START-------------------------------------------->
+
+    <div style="box-shadow: 0px 5px 8px #b8b6b6; background-color: #f7f5f5;" >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12" style="padding: 5px 5px 0 5px; text-align: center;">
+            <img src="./photos/mylogo1.png" height="50">
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12" style="padding: 0 5px 5px 5px;">
+            <h1 style="letter-spacing: 5px; font-weight: 600; font-size:larger; color: #0b74dd; text-align: center;">SUDHANSHU GUPTA</h1>
+          </div>
+        </div>
+      </div>     
+    </div>
+
+<!------------------------------------------------LOGO SECTION END---------------------------------------------->
+
+    
+<!---------------------------------------------ABOUT ME SECTION START-------------------------------------------->
+
+    <section id='intro-sec' style="background-color: rgb(219, 215, 215); margin-top: 5px;">
+      <div class="container">
+        <div class="row" style="padding-top: 30px; padding-bottom: 30px;">
+          <div class="col-lg-8 col-md-12 col-sm-12" style="background-color: white; border-radius: 10px;">
+            <div class="row">
+              <img src="./photos/newBG.png" class="bgpic">
+              <!--<img src="./photos/bg.png" class="bgpic">-->
+              <!--<img src="./photos/Sudhanshu-Gupta_Photo.png" class="mypic">-->
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12" style="padding-left: 22px;">
+                <h3 style="font-weight: 600; font-size: 25px;">Sudhanshu Gupta</h3>
+                <h5 style="font-weight: 600; font-size: 15px;">Frontend developer | ReactJS | C++ | Senior</h5>
+                <h6 style="color: gray; font-size: 13px;">Sawai Madhopur, Rajasthan, India</h6>
+                <br/>
+                <button type="button" class="btn btn-primary btn-sm" style="cursor: context-menu; border-radius: 30px; font-weight: 600;">Email ID</button>
+                <button type="button" class="btn btn-secondary btn-sm" onclick="copyEmail()" style="cursor: text; padding: 0; border-radius: 30px; background-color: white; color: black;"><input type="text" value="sudhanshu29gupta@gmail.com" id="myInput" style="border-radius: 30px; width: 210px; text-align:center; height: 30px; border: 1px solid gray; cursor: pointer"></button>
+                <br/><br/>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-4" style="text-align: end;">
+                    <a href="https://www.github.com/sudhanshu2900/" target="_blank"><i class="bi bi-github" style="font-size: 25px;"></i></a>
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-sm-8">
+                    <p style="font-size: 14px; font-weight: 600; padding-top: 10px;">github/sudhanshu2900</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-6" style="text-align: end;">
+                    <a href="https://www.linkedin.com/in/sudhanshu2900" target="_blank"><i class="bi bi-linkedin" style="font-size: 25px;"></i></a>
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-sm-6">
+                    <p style="font-size: 14px; font-weight: 600; padding-top: 10px;">linkedin/sudhanshu2900</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-6" style="text-align: end;">
+                    <a href="https://www.twitter.com/sudhanshu2900/" target="_blank"><i class="bi bi-twitter" style="font-size: 25px;"></i></a>
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-sm-6">
+                    <p style="font-size: 14px; font-weight: 600; padding-top: 10px;">twitter/sudhanshu2900</p>
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+            
+            <div class="container px-2">
+              <div class="row gx-3">
+                <div class="col-sm-12 col-lg-6 col-md-6">
+                 <div class="p-3 border" style="border-radius: 10px; border: 2px solid lightgray; background-color: lightgray; margin-bottom: 10px; font-size: 15px;">To view my profile in a page then take my<br/><a href="https://drive.google.com/file/d/1iinp5lR31lrifBC9A7NL1bdOdvXk8cMX/view?usp=sharing" target="_blank" style="color: #0A66C2; font-weight: 700;">Resume</a></div>
+                </div>
+                <div class="col-sm-12 col-lg-6 col-md-6">
+                  <div class="p-3 border bg-light" style="border-radius: 10px; font-size: 15px; margin-bottom: 10px; ">Pationate about programming and love to design frontend of web applications.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12" >
+            <div style="margin: 25px; border: 1px solid rgb(196, 194, 194); border-radius: 10px; background-color: white; padding-top: 10px; padding-bottom: 10px;">
+              <div class="row">
+                <div class="col-lg-12 col-md-3 col-sm-3" >
+                  <h2><a href="#intro-sec">ABOUT ME</a></h2>
+                </div>
+                <div class="col-lg-12 col-md-3 col-sm-3" >
+                  <h2><a href="#edu-sec">EDUCATION</a></h2>
+                </div>
+                <div class="col-lg-12 col-md-3 col-sm-3" >
+                  <h2><a href="#skills-sec">SKILLS</a></h2>
+                </div>
+                <div class="col-lg-12 col-md-3 col-sm-3" >
+                  <h2><a href="#exp-sec">EXPERIENCE</a></h2>
+                </div>
+              </div>
+              <div class="row">  
+                <div class="col-lg-12 col-md-3 col-sm-3" >
+                  <h2><a href="#pro-sec">PROJECTS</a></h2>
+                </div>
+                <div class="col-lg-12 col-md-3 col-sm-3" >
+                  <h2><a href="#link-sec">LINKS</a></h2>
+                </div>
+                <div class="col-lg-12 col-md-3 col-sm-3" >
+                  <h2><a href="#certi-sec">CERTIFICATION</a></h2>
+                </div>
+                <div class="col-lg-12 col-md-3 col-sm-3" >
+                  <h2><a href="#achi-sec">ACHIEVEMENTS</a></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!---------------------------------------------ABOUT ME SECTION END-------------------------------------------->
+
+    <section><hr></section>
+
+<!---------------------------------------------EDUCATION SECTION START-------------------------------------------->
+
+    <section id='edu-sec'>
+      <div class="row">
+        <h1 style="letter-spacing: 7px; font-weight: 600; text-align: center;">EDUCATION</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="row" style="background-color: #00BFA5;">
+            <h5 style="text-align: center; padding-top: 40px; color: white; padding-bottom: 40px;">These are my educational background</h5>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12" style="background-color: rgb(221, 222, 224);">
+              <div style="border: 1px solid gray; border-radius: 50px; margin: 10px; padding: 10px; color: gray; background-color: white;">
+                <i class="bi bi-search"> Search</i>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3" style=" text-align: center; padding: 15px;">
+              <img src="./photos/PCElogo.jpg" style="width: 55px; height: 60px;">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9" style="padding: 15px; line-height: 1.4px;">
+              <a onClick="changeClg()" style="cursor: pointer;"><div id="clg">
+                <h6 style="font-weight: 700;">Poornima College of Engineering</h6>
+                <p style="color: rgb(77, 153, 252); font-weight: 600; font-size: 13px;">Jaipur, Rajasthan</p>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <h5 style="text-align: end; font-weight: 600; color: lightslategrey; font-size: 13px;">August 2018 - July 2022</h5>
+              </div></a>
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3" style=" text-align: center; padding: 15px;">
+              <img src="./photos/CPlogo.png" style="width: 65px; height: 40px;">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9" style="padding: 15px; line-height: 1.4px;">
+              <a onClick="changeTwscol()" style="cursor: pointer;"><div id="twScol">
+                <h6 id='twScol' style="font-weight: 700;">Career Point Children Academy Senior Secondry School</h6>
+                <p style="color: rgb(77, 153, 252); font-weight: 600; font-size: 13px;">Sawai Madhopur, Rajasthan</p>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <h5 style="text-align: end; font-weight: 600; color: lightslategrey; font-size: 13px;">June 2017 - May 2018</h5>
+              </div></a>
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3" style=" text-align: center; padding: 15px;">
+              <img src="./photos/KVlogo.png" style="width: 60px; height: 50px;">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 tnScol" style="padding: 15px; line-height: 1.4px;">
+              <a onClick="changeTnscol()" style="cursor: pointer;"><div id="tnScol">
+                <h6 style="font-weight: 700;">Kendriya Vidyalaya, Sangathan</h6>
+                <p style="color: rgb(77, 153, 252); font-weight: 600; font-size: 13px;">Sawai Madhopur, Rajasthan</p>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <h5 style="text-align: end; font-weight: 600; color: lightslategrey; font-size: 13px;">April 2015 - May 2016</h5>
+              </div></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12" style="background-color: rgb(239, 240, 243); display: flex; justify-content: center; align-items: center;">
+          <div id="content" style="text-align: center; color: gray;">
+            <img src= "./photos/books.png" width="200px" height="200px" style="opacity: 0.7;">
+            <h1 style="font-weight: 300;">Want to see my educational history</h1>
+            <h5 style="font-weight: 300;">Please click on any chat</h5>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="background-color: lightgreen ; height: 5px"></div>
+    </section>
+
+<!---------------------------------------------EDUCTION SECTION END-------------------------------------------->
+
+    <section><hr></section>
+
+<!---------------------------------------------SKILLS SECTION START-------------------------------------------->
+
+    <section id='skills-sec'>
+      <div class="row"><h1 style="text-align: center; letter-spacing: 7px; font-weight: 600; padding-bottom: 30px;">SKILLS</h1></div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="filter-buttons" style="flex: 0 0 100%; max-width: 100%; margin-bottom: 20px;">
+            <ul id="filter-btns" style="text-align: center; list-style: none; padding: 0;">
+              <li class="active" data-target="all">All</li>
+              <li data-target="lang">Languages</li>
+              <li data-target="webdev">Web Development</li>
+              <li data-target="db">Database</li>
+              <li data-target="cf">Computer Fundamentals</li>
+              <li data-target="ot">Others</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="portfolio-gallery" style="flex: 0 0 100%; max-width: 100%; display: flex; flex-wrap: wrap;">
+
+            <div class="item" data-id="lang">
+              <div class="inner"><img src="./photos/c++pic.jpg" width="100%", height="100%"></div>
+            </div>
+            <div class="item" data-id="lang">
+              <div class="inner"><img src="./photos/JSpic.png" width="100%", height="100%"></div>
+            </div>
+
+            <div class="item" data-id="webdev">
+              <div class="inner"><img src="./photos/Htmlpic.jpg" width="100%", height="100%"></div>
+            </div>
+            <div class="item" data-id="webdev">
+              <div class="inner"><img src="./photos/csspic.jpg" width="100%", height="100%"></div>
+            </div>
+            <div class="item" data-id="webdev">
+              <div class="inner"><img src="./photos/reactpic.jpg" width="100%", height="100%"></div>
+            </div>
+            <div class="item" data-id="webdev">
+              <div class="inner"><img src="./photos/reactstrappic.jpg" width="100%", height="100%"></div>
+            </div>
+            <div class="item" data-id="webdev">
+              <div class="inner"><img src="./photos/bootpic.png" width="100%", height="100%"></div>
+            </div>
+            
+            <div class="item" data-id="db">
+              <div class="inner"><img src="./photos/mysqlpic.png" width="100%", height="100%"></div>
+            </div>
+
+            <div class="item" data-id="cf">
+              <div class="inner"><img src="./photos/DSApic.jpg" width="100%", height="100%"></div>
+            </div>
+            <div class="item" data-id="cf">
+              <div class="inner"><img src="./photos/ospic.jpg" width="100%", height="100%"></div>
+            </div>
+            <div class="item" data-id="cf">
+              <div class="inner"><img src="./photos/dccnpic.jpg" width="100%", height="100%"></div>
+            </div>
+            <div class="item" data-id="cf">
+              <div class="inner"><img src="./photos/dbmspic.png" width="100%", height="100%"></div>
+            </div>
+            <div class="item" data-id="cf">
+              <div class="inner"><img src="./photos/oodpic.jpg" width="100%", height="100%"></div>
+            </div>
+            <div class="item" data-id="cf">
+              <div class="inner"><img src="./photos/oops.jpg" width="100%", height="100%"></div>
+            </div>
+
+            <div class="item" data-id="ot">
+              <div class="inner"><img src="./photos/figmaPic.jpeg" width="100%", height="100%"></div>
+            </div>
+            <div class="item" data-id="ot">
+              <div class="inner"><img src="./photos/gitpic.jpg" width="100%", height="100%"></div>
+            </div>            
+          </div>
+        </div>
+        <br/><br/>
+      </div>
+    </section>
+
+    <section><hr></section>
+
+    <section id='exp-sec' style="background-color: rgb(240, 242, 245);">
+      <br/>
+      <div class="row"><h1 style="letter-spacing: 7px; font-weight: 600; text-align: center;">EXPERIENCE</h1></div><br/>
+
+      
+      <div class="container" style="display: flex; justify-content: center; align-items: center; ">
+        <div class="row" style="display: flex; justify-content: center; align-items: center; width: 360px;">
+            <div style="width: 120px; height: 160px; padding: 5px;">
+              <div style="background-color: white; border: 1px lightgray solid; height: 160px; border-radius: 12px; background-color: rgba(77, 153, 252, 0.5);">
+                <img src="./photos/Internship.png" width="60%" style="margin: 20px 20px 20px 20px;">
+                <div style="text-align: center; color:rgb(0, 0, 0); padding: 10px; border: 1px lightgray solid; background-color: white; border-radius: 0 0 12px 12px; width: 100%;"><h6>Internship</h6></div>
+              </div> 
+            </div>
+            <div style="width: 120px; height: 160px; padding: 5px;">
+              <div style="background-color: white; border: 1px lightgray solid; height: 160px; border-radius: 12px; background-color: rgb(252, 176, 77, 0.5);">
+                <img src="./photos/Training.png" width="55%" style="margin: 20px 20px 15px 25px;">
+                <div style="text-align: center; color:rgb(0, 0, 0); padding: 10px; border: 1px lightgray solid; background-color: white; border-radius: 0 0 12px 12px; width: 100%;"><h6>Training</h6></div>
+              </div> 
+            </div>
+            <div style=" width: 120px; height: 160px; padding: 5px;">
+              <div style="background-color: white; border: 1px lightgray solid; height: 160px; border-radius: 12px; background-color: rgb(132, 252, 77, 0.5);">
+                <img src="./photos/Job.png" width="54%" style="margin: 20px 20px 20px 25px;">
+                <div style="text-align: center; color:rgb(0, 0, 0); padding: 10px; border: 1px lightgray solid; background-color: white; border-radius: 0 0 12px 12px; width: 100%;"><h6>Job</h6></div>
+              </div> 
+            </div>
+        </div>
+      </div>
+      <br/>
+
+      <div class="container">
+
+        <div class="row" style="display: flex; justify-content: center;">
+          <div class="col-lg-12 col-md-12 col-sm-12" style="width: 500px; background-color: white; border: 1px lightgray solid; border-radius: 10px; padding: 10px;">
+            <div class="row" style="line-height: 1px;">
+              <h4 style="font-size: 15px; font-weight: 600;">INTERNSHIP</h4>
+              <p style="color: gray; font-size: 12px; font-weight: 600;">June 2021 - August 2021</p>        
+            </div>
+            <br/>
+            <div>
+              <p style="line-height: 5px; font-size: 14px;"><strong>Company Name :</strong> TDPVista, Bhopal</p>
+              <p style="line-height: 5px; font-size: 14px;"><strong>Internship Domain :</strong> Web Development</p>
+            </div>
+            <div>
+              <p style="font-size: 14px; padding-top: 0;"><strong>Description :</strong></p>
+              <p style="margin-top: -14px ; font-size: 14px; padding-top: 0;">(1) Worked with <strong>React JS, ReactStrap, Argon Dashboard, npm</strong>.</p>
+              <p style="margin-top: -14px ; font-size: 14px; padding-top: 0;">(2) Worked on a <strong>Institute management system (website)</strong> to track student's progress and equip them with various skills.</p>
+              <p style="margin-top: -14px ; font-size: 14px; padding-top: 0;">(3) Developed website components like <strong>Side navbar, Workshop page, Contact Us page, Blog (on Adobe premiere pro)</strong></p>
+            </div>
+            <img src="./photos/Intern_certi.jpg" class="card-img-top" alt="TDPVista" height="350px">
+            <a href="https://tdpvista.in" target="_blank" style="font-weight: 600;"><i class="bi bi-globe2"> TDPVista</i></a>
+          </div>
+        </div>
+        <br/>
+
+        <div class="row" style="display: flex; justify-content: center;">
+          <div class="col-lg-12 col-md-12 col-sm-12" style="width: 500px; background-color: white; border: 1px lightgray solid; border-radius: 10px; padding: 10px;">
+            <div style="line-height: 1px;">
+              <h4 style="font-size: 15px; font-weight: 600;">SUMMER TRAINING</h4>
+              <p style="color: gray; font-size: 12px; font-weight: 600;">May 2020 - June 2020</p>
+            </div>
+            <br/>
+            <div>
+              <p style="line-height: 5px; font-size: 14px;"><strong>Company Name :</strong> Coursera</p>
+              <p style="line-height: 5px; font-size: 14px;"><strong>Internship Type :</strong> Online Courses</p>
+            </div>
+            <div>
+              <p style="font-size: 14px; padding-top: 0;"><strong>Description :</strong></p>
+              <p style="margin-top: -14px ; font-size: 14px; padding-top: 0;">(1) I learnt <strong>Machine Learning, Deep Learning, OpenCV, Python</strong>.</p>
+              <p style="margin-top: -14px ; font-size: 14px; padding-top: 0;">(2) Developed a Project Face Recognition using <strong>OpenCV, Tensorflow.JS, Python</strong>.</p>            </div>
+            <img src="./photos/Python-certi.jpg" class="card-img-top" alt="coursera" height="350px">
+            <a href="https://www.coursera.org" target="_blank" style="font-weight: 600;"><i class="bi bi-globe2"> Coursera</i></a>
+          </div>
+        </div>
+        <br/>
+
+        <div class="row" style="display: flex; justify-content: center;">
+          <div class="col-lg-12 col-md-12 col-sm-12" style="width: 500px; background-color: white; border: 1px lightgray solid; border-radius: 10px; padding: 10px;">
+            <div style="line-height: 1px;">
+              <h4 style="font-size: 15px; font-weight: 600;">SUMMER TRAINING</h4>
+              <p style="color: gray; font-size: 12px; font-weight: 600;">May 2019 - May 2019</p>
+            </div>
+            <br/>
+            <div>
+              <p style="line-height: 5px; font-size: 14px;"><strong>Company Name :</strong> WAE Consultancy Services, Jaipur</p>
+              <p style="line-height: 5px; font-size: 14px;"><strong>Internship Domain :</strong> Python & Web Development</p>
+            </div>
+            <div>
+              <p style="font-size: 14px; padding-top: 0;"><strong>Description :</strong></p>
+              <p style="margin-top: -14px ; font-size: 14px; padding-top: 0;">(1) I learnt <strong>HTML5, CSS and Python</strong>.</p>
+              <p style="margin-top: -14px ; font-size: 14px; padding-top: 0;">(2) Developed a <strong>Website</strong> using HTML5, CSS3 and <strong>Snake game</strong> using Python and Tkinter.</p>
+            </div>
+            <img src="./photos/traning_certi.png" class="card-img-top" alt="WAECS" height="350px">
+            <a href="https://www.waecs.in/" target="_blank" style="font-weight: 600;"><i class="bi bi-globe2"> WAECS</i></a>
+          </div>
+        </div>
+        <br/>
+        
+      </div>
+
+    </section>
+
+<!-----------------------------------------------SKILLS SECTION END-------------------------------------------->
+
+    <section><hr></section>
+
+<!---------------------------------------------PROJECT SECTION START-------------------------------------------->
+
+    <section id='pro-sec'>
+      <br/>
+      <div class="row"><h1 style="letter-spacing: 7px; font-weight: 600; text-align: center;">PROJECTS</h1></div><br/>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="col d-flex justify-content-center">
+            <img src="./photos/projectPic.jpg" alt="Avatar" style="width:300px; margin-bottom: 20px; border:3px solid lightgray; border-radius: 50%;">
+          </div>
+        </div>
+        
+        <div class="col-lg-8 col-md-12 col-sm-12">
+          <div class="container px-4">
+            <div class="row gx-3">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="p-3 border bg-light" style="border-radius: 5px; margin-top: 5px; margin-bottom: 5px;">
+                  <h5 style="font-weight: 700; font-size: 16px; color: #58A6FF;">College Help Desk</h5>
+                  <p style="text-align: end; font-size: 12px; font-weight: 700; color: gray;">May 2021 - June 2021</p>
+                  <p style="font-size: 13px;">-> Developed a study material based website using <strong>HTML, CSS, Bootstrap, Javascript, PostgreSQL</strong> and <strong>Django</strong>.</p>
+                  <p style="font-size: 13px; margin-top: -13px">-> It persists Exam Papers, Video lectures, Notes, Syllabus, Books for all engineering branches.</p>
+                  <p style="font-size: 13px; margin-top: -13px">->Website was hosted on Heroku platform.</p>
+                  <a href="https://coolcollegebuddy.herokuapp.com/" target="_blank" class="btn btn-outline-secondary" style="border-radius: 3px; width: 100%; margin-bottom: 8px; font-size: 13px; letter-spacing: 2px;" role="button">PROJECT LINK</a>
+                  <i class="bi bi-circle-fill" style="color: rgb(255, 115, 0); font-size: 13px; font-weight: 600"> HTML, CSS, Bootstrap, Javascript, PostgreSQL, Django</i>                  
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="p-3 border bg-light" style="border-radius: 5px; margin-top: 5px; margin-bottom: 5px;">
+                  <h5 style="font-weight: 700; font-size: 16px; color: #58A6FF;">Application Tracking system</h5>
+                  <p style="text-align: end; font-size: 12px; font-weight: 700; color: gray;">July 2021 - July 2021</p>
+                  <p style="font-size: 13px;">-> Developed a Resume filter application using <strong>HTML5, CSS3, Bootstrap, Javascript</strong>.</p>
+                  <p style="font-size: 13px; margin-top: -13px">-> This application work upon <strong>keyword searching</strong>, Actually it searches relevant skills in the resume and gives result whether resume will got selected or not.</p>
+                  <a href="https://github.com/sudhanshu2900/Resume-Filter-Application" target="_blank" class="btn btn-outline-secondary" style="border-radius: 3px; width: 100%; margin-bottom: 8px; font-size: 13px; letter-spacing: 2px;" role="button">PROJECT LINK</a>  
+                  <i class="bi bi-circle-fill" style="color: rgb(255, 115, 0); font-size: 13px; font-weight: 600"> HTML5, CSS3, Bootstrap, Javascript</i>
+                </div>
+              </div>
+            </div>
+                                    
+            <div class="row gx-3">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="p-3 border bg-light" style="border-radius: 5px; margin-top: 5px; margin-bottom: 5px;">
+                  <h5 style="font-weight: 700; font-size: 16px; color: #58A6FF;">Medi Info</h5>
+                  <p style="font-size: 13px;">-> Developed a medical related website using <strong>HTML5, CSS3, Bootstrap,Javascript, python</strong> and <strong>MySQL</strong></p>
+                  <p style="font-size: 13px; margin-top: -13px">-> It has details of various hospitals in Jaipur and it connects patients to the hospitals and also provides ambulance facility.</p>
+                  <a href="https://www.google.com" class="btn btn-outline-secondary" style="border-radius: 3px; width: 100%; margin-bottom: 8px; font-size: 13px; letter-spacing: 2px;" role="button">PROJECT LINK</a>
+                  <i class="bi bi-circle-fill" style="color: rgb(255, 115, 0); font-size: 13px; font-weight: 600"> HTML5, CSS3, Bootstrap, Javascript, python, MySQL</i>                  
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="p-3 border bg-light" style="border-radius: 5px; margin-top: 5px; margin-bottom: 5px;">
+                  <h5 style="font-weight: 700; font-size: 16px; color: #58A6FF;">Face Detection</h5>
+                  <p style="font-size: 13px;">-> Developed a web browser based application using <strong>Tensorflow.Js, OpenCV, Python, Javascript.</strong></p>
+                  <p style="font-size: 13px; margin-top: -13px">-> Application recognize faces through images, videos and live webcam.</p>
+                  <a href="https://github.com/sudhanshu2900/FaceDetectionApplication.github.io" target="_blank" class="btn btn-outline-secondary" style="border-radius: 3px; width: 100%; margin-bottom: 8px; font-size: 13px; letter-spacing: 2px;" role="button">PROJECT LINK</a>
+                  <i class="bi bi-circle-fill" style="color: rgb(255, 115, 0); font-size: 13px; font-weight: 600"> OpenCV, python, Javascript, Tensorflow</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!------------------------------------------------PROJECT SECTION END------------------------------------------------>
+
+    <section><hr></section>
+
+<!-------------------------------------------------LINK SECTION START------------------------------------------------>
+
+    <section id='link-sec'>
+      <div class="row"><h1 style="letter-spacing: 7px; font-weight: 600; text-align: center;">LINKS</h1></div><br/>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">  <!--Leetcode-->
+            <div style="border: 1px solid lightgray; padding: 0; margin-top: 10px; margin-bottom: 10px; box-shadow: 5px 5px 10px lightgray;">
+              <div style="background-color: #ff9800; color: aliceblue;">
+                <h5 style=" color: white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; padding: 15px;">LeetCode</h5>
+              </div>
+              <div>
+                <p style="font-size: 15px;padding-left: 15px;"><strong>Username:</strong> sudhanshu2900</p>
+                <a href="https://leetcode.com/sudhanshu__2900/" target="_blank" class="btn" style="border-radius: 5px; margin-left: 15px; margin-bottom: 10px; font-size: 13px; color: #ff9800; font-weight: 700; border: 1px solid #ff9800;" role="button">Profile Link</a>           
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 col-sm-12">  <!--GeeksForGeeks-->
+            <div style="border: 1px solid lightgray; padding: 0; margin-top: 10px; margin-bottom: 10px; box-shadow: 5px 5px 10px lightgray;">
+              <div style="background-color: #2F8D46; color: aliceblue;">
+                <h5 style=" color: white; font-family: Roboto, sans-serif; padding: 15px;">GeeksforGeeks</h5>
+              </div>
+              <div>
+                <p style="font-size: 15px;padding-left: 15px;"><strong>Username:</strong> sudhanshu2900</p>
+                <a href="https://auth.geeksforgeeks.org/user/sudhanshu29gupta/practice/" target="_blank" class="btn" style="border-radius: 0px; margin-left: 15px; margin-bottom: 10px; font-size: 13px; color: white; font-weight: 700; background-color: #1BA94C; border: 1px solid #1BA94C;" role="button">Profile Link</a>           
+              </div>
+            </div>
+          </div>
+        </div>       
+
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12" >  <!--Hackerrank C++-->
+            <div style="border: 1px solid lightgray; padding: 0; margin-top: 10px; margin-bottom: 10px; box-shadow: 5px 5px 10px lightgray;">
+              <div style="background-color: #39424E; color: aliceblue;">
+                <h5 style="font-weight: 700; color: white; padding: 15px;">HackerRank</h5>
+              </div>
+              <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                  <p style="font-size: 15px;padding-left: 15px;"><strong>Username:</strong> sudhanshu29gupta</p>
+                  <a href="https://www.hackerrank.com/dashboard" target="_blank" class="btn" style="border-radius: 0px; margin-left: 15px; margin-bottom: 10px; font-size: 13px; color: #1BA94C; font-weight: 700; border: 1px solid #1BA94C;" role="button">Profile Link</a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <h1 style="font-weight: 700; padding-left: 15px; color: #39424E;">C++</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 col-md-12 col-sm-12">  <!--Hackerrank SQL-->
+            <div style="border: 1px solid lightgray; padding: 0; margin-top: 10px; margin-bottom: 10px; box-shadow: 5px 5px 10px lightgray;">
+              <div style="background-color: #39424E; color: aliceblue;">
+                <h5 style="font-weight: 700; color: white; padding: 15px;">HackerRank</h5>
+              </div>
+              <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                  <p style="font-size: 15px;padding-left: 15px;"><strong>Username:</strong> sudhanshu29gupta</p>
+                  <a href="https://www.hackerrank.com/dashboard" target="_blank" class="btn" style="border-radius: 0px; margin-left: 15px; margin-bottom: 10px; font-size: 13px; color: #1BA94C; font-weight: 700; border: 1px solid #1BA94C;" role="button">Profile Link</a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <h1 style="font-weight: 700; padding-left: 15px; color: #39424E;">SQL</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 col-sm-12">  <!--Figma-->
+            <div style="border: 1px solid lightgray; padding: 0; margin-top: 10px; margin-bottom: 10px; box-shadow: 5px 5px 10px lightgray;">
+              <div style="background-color: rgb(271,74,28); color: aliceblue;">
+                <h5 style="font-weight: 700; color: white; padding: 15px;">Figma</h5>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <p style="font-size: 15px;padding-left: 15px;">I design frontend using Figma</p>
+                  <a href="https://drive.google.com/drive/folders/1xY1VYw-lipjobF3REBmQ3N3EWtIeEiwj" target="_blank" class="btn" style="border-radius: 5px; margin-left: 15px; margin-bottom: 10px; font-size: 13px; color: black; font-weight: 500; border: 1px solid #000000;" role="button">Design Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <br/>
+    </section>
+
+<!-------------------------------------------------LINK SECTION END---------------------------------------------->
+
+    <section><hr></section>
+
+<!---------------------------------------------CERTIFICATE SECTION START-------------------------------------------->
+
+    <section id='certi-sec'>
+      <div class="row"><h1 style="letter-spacing: 7px; font-weight: 600; text-align: center;">CERTIFICATES</h1></div><br/><br/>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-12 col-sm-12">
+            <div class="row" style="margin-bottom: 20px;">
+              <div class="col-lg-8 col-md-8 col-sm-8" style="padding: 15px; padding-bottom: 0;">
+                <div class="row">
+                  <p style="font-weight: 700; font-size: 13px;">NPTEL</p>
+                </div>
+                <div class="row">
+                  <h4 style="font-weight: 700;">Programming in Java</h4>
+                  <p style="font-size: 13px;"><strong>Verify at:</strong> NPTEL29CS58S61650361</p>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3" style="padding-right: 0;">
+                      <p style="font-size: 12px; color: gray;">Dec, 2020</p>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                      <a href="https://drive.google.com/file/d/19t739Pu7hRtLk0a3690jSzbE9klGZ_ER/view?usp=sharing" target="_blank" class="btn btn-outline-secondary" style="border-radius: 20px; margin-top: -10px; padding-top: 0px; padding-bottom: 0px ; font-size: 12px;" role="button">Certificate</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4" >
+                <img src="./photos/Java-certi.jpg" width="100%" height="100%">
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 20px;">
+              <div class="col-lg-8 col-md-8 col-sm-8" style="padding: 15px; padding-bottom: 0;">
+                <div class="row">
+                  <p style="font-weight: 700; font-size: 13px;">NPTEL</p>
+                </div>
+                <div class="row">
+                  <h4 style="font-weight: 700;">An introduction to programming through C++</h4>
+                  <p style="font-size: 13px;"><strong>Verify at:</strong> NPTEL19CS39S51500190</p>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3" style="padding-right: 0;">
+                      <p style="font-size: 12px; color: gray;">Oct, 2019</p>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                      <a href="https://drive.google.com/file/d/1Jv6i98JE_rTvTvyYikLeHtxWh6Z1WbgZ/view?usp=sharing" target="_blank" class="btn btn-outline-secondary" style="border-radius: 20px; margin-top: -10px; padding-top: 0px; padding-bottom: 0px ; font-size: 12px;" role="button">Certificate</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4" >
+                <img src="./photos/C++-certi.jpg" width="100%" height="100%">
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 15px;">
+              <div class="col-lg-8 col-md-8 col-sm-8" style="padding: 15px; padding-bottom: 0;">
+                <div class="row">
+                  <p style="font-weight: 700; font-size: 13px;">NPTEL</p>
+                </div>
+                <div class="row">
+                  <h4 style="font-weight: 700;">Introduction to programming in C</h4>
+                  <p style="font-size: 13px;"><strong>Verify at:</strong> NPTEL20CS91S31650215</p>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3" style="padding-right: 0;">
+                      <p style="font-size: 12px; color: gray;">Nov, 2020</p>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                      <a href="https://drive.google.com/file/d/19sgIi1ezEVfnN46Zr5Dld4lUufzA7nfs/view?usp=sharing" target="_blank" class="btn btn-outline-secondary" style="border-radius: 20px; margin-top: -10px; padding-top: 0px; padding-bottom: 0px ; font-size: 12px;" role="button">Certificate</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4" >
+                <img src="./photos/C-certi.jpg" width="100%" height="100%">
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 15px;">
+              <div class="col-lg-8 col-md-8 col-sm-8" style="padding: 15px; padding-bottom: 0;">
+                <div class="row">
+                  <p style="font-weight: 700; font-size: 13px;">COURSERA</p>
+                </div>
+                <div class="row">
+                  <h4 style="font-weight: 700;">Python 3 programming</h4>
+                  <p style="font-size: 13px;"><strong>Verify at:</strong> GN3KYYSDEAA6</p>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3" style="padding-right: 0;">
+                      <p style="font-size: 12px; color: gray;">July, 2020</p>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                      <a href="https://drive.google.com/file/d/14Oz2SRmzd53hTNl8ltSTSg2_Ycs8Ylpx/view?usp=sharing" target="_blank" class="btn btn-outline-secondary" style="border-radius: 20px; margin-top: -10px; padding-top: 0px; padding-bottom: 0px ; font-size: 12px;" role="button">Certificate</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4" >
+                <img src="./photos/Python-certi.jpg" width="100%" height="100%">
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 15px;">
+              <div class="col-lg-8 col-md-8 col-sm-8" style="padding: 15px; padding-bottom: 0;">
+                <div class="row">
+                  <p style="font-weight: 700; font-size: 13px;">COURSERA</p>
+                </div>
+                <div class="row">
+                  <h4 style="font-weight: 700;">Neural networks and Deep Learning</h4>
+                  <p style="font-size: 13px;"><strong>Verify at:</strong> 8JNSLCPLTM84</p>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3" style="padding-right: 0;">
+                      <p style="font-size: 12px; color: gray;">July, 2020</p>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                      <a href="https://drive.google.com/file/d/1BzwaPcZfF6MQVWspKPhWkez72JpdBcmL/view?usp=sharing" target="_blank" class="btn btn-outline-secondary" style="border-radius: 20px; margin-top: -10px; padding-top: 0px; padding-bottom: 0px ; font-size: 12px;" role="button">Certificate</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4" >
+                <img src="./photos/DL-certi.jpg" width="100%" height="100%">
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 15px;">
+              <div class="col-lg-8 col-md-8 col-sm-8" style="padding: 15px; padding-bottom: 0;">
+                <div class="row">
+                  <p style="font-weight: 700; font-size: 13px;">COURSERA</p>
+                </div>
+                <div class="row">
+                  <h4 style="font-weight: 700;">Machine Learning with python</h4>
+                  <p style="font-size: 13px;"><strong>Verify at:</strong> NQQJ7PCTMW48</p>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3" style="padding-right: 0;">
+                      <p style="font-size: 12px; color: gray;">June, 2020</p>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                      <a href="https://drive.google.com/file/d/18fMIQC8JQLHtPj7JvHWRQE-B8oU2bE7c/view?usp=sharing" target="_blank" class="btn btn-outline-secondary" style="border-radius: 20px; margin-top: -10px; padding-top: 0px; padding-bottom: 0px ; font-size: 12px;" role="button">Certificate</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4" >
+                <img src="./photos/ML-certi.jpg" width="100%" height="100%">
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12" style="padding: 50px;">
+            <div><h6 style="font-weight: 700; font-size: 15px;">DOMAINS IN WHICH I CERTIFIED</h6></div>
+            <div>
+              <div class="row" style="font-size: 12px; color: gray; text-align: center; ">
+                <div style=" width:30%; border: 1px solid lightgray; border-radius: 3px; margin: 5px; padding-top: 4px; padding-bottom: 4px;">C++</div>
+                <div style=" width:30%; border: 1px solid lightgray; border-radius: 3px; margin: 5px; padding-top: 4px; padding-bottom: 4px;">Java</div>
+                <div style=" width:20%; border: 1px solid lightgray; border-radius: 3px; margin: 5px; padding-top: 4px; padding-bottom: 4px;">C</div>
+                <div style=" width:40%; border: 1px solid lightgray; border-radius: 3px; margin: 5px; padding-top: 4px; padding-bottom: 4px;">Python</div>
+                <div style=" width:53%; border: 1px solid lightgray; border-radius: 3px; margin: 5px; padding-top: 4px; padding-bottom: 4px;">Machine Learning</div>
+                <div style=" width:50%; border: 1px solid lightgray; border-radius: 3px; margin: 5px; padding-top: 4px; padding-bottom: 4px;">Deep Learning</div>
+                <div style=" width:40%; border: 1px solid lightgray; border-radius: 3px; margin: 5px; padding-top: 4px; padding-bottom: 4px;">OpenCV</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-----------------------------------------------CERTIFICATE SECTION END-------------------------------------------->
+
+    <section><hr></section>
+
+<!---------------------------------------------ACHIEVEMENTS SECTION START-------------------------------------------->
+
+    <section id='achi-sec' style="background-color: #e9e7e7;">
+      <br/>
+      <div class="row"><h1 style="letter-spacing: 7px; font-weight: 600; text-align: center;">ACHIEVEMENTS</h1></div>
+      <br/>
+
+      <div class="container">
+        <div class="wrapper">
+          <h3>TCS NQT TEST</h3>
+          <div class="content">
+            <p>Tata Consultancy Services conducted National Qualifier Test every year. This test include <strong>Quantitative Aptitude, Reasoning, Verbal, Programming fundamendals and coding problems</strong>.</p>
+            <p>I scored <strong>71.8%</strong> in TCS NQT (Feb 2021).</p>
+          </div>
+        </div>
+        <br/>
+
+        <div class="wrapper">
+          <h3>SILVER MEDAL</h3>
+          <div class="content">
+            <p>My college organize a event <strong>Kalanidhi</strong> every year, in this event all the students are awrded by Director and principal of college on best performance in University exams and project submission.</p>
+            <p>I awarded by silver medal on securing <strong>8.93 CGPA</strong> in Unversity exam.</p>
+          </div>
+        </div>
+        <br/>
+
+        <div class="wrapper">
+          <h3>THEATOR PLAY</h3>
+          <div class="content">
+            <p>Our college organizes college fest every year, it include several events related to sports, cultural etc. We all team members are decided to participate in theator play competition.</p>
+            <p>We scored <strong>2nd rank</strong> in theator play competition.</p>
+          </div>
+        </div>
+        <br/>
+
+        <div class="wrapper">
+          <h3>POSTER MAKING</h3>
+          <div class="content">
+            <p>Poster making competition is organized by <strong>Rajiv Gandhi Regional Musuem of Natural History (Ministry of enviornment forests and climate change, Govt. of India)</strong>.</p>
+            <p>I secured <strong>2nd position</strong> and awarded by Rs 2500.</p>
+          </div>
+        </div>
+        <br/>
+
+        <div class="wrapper">
+          <h3>KHO-KHO GAME</h3>
+          <div class="content">
+            <P>My school organization Kendriya Vidyalaya Sangathan organized <strong>KHO-KHO cluster level, regional level</strong> competition and after that some selected students are qualify for National level competition.</P>
+            <p>We secure <strong>1st rank</strong> in cluster level but we got 4th rank in regional level.</p>
+          </div>
+        </div>
+        <br/>
+
+        <div class="wrapper">
+          <h3>SCOUT & GUIDE</h3>
+          <div class="content">
+            <p>When I was in school, I was the part of <strong>The Bharat Scout & Guide</strong> organization. I got this opportunity from my school Kendriya Vidyalaya. I was member of this organization for 6-7 years.</p>
+            <p>I completed <strong>Pratham Sopan</strong> and <strong>Dwitiya Sopan</strong>.</p>
+          </div>
+        </div>
+        <br/>
+
+      </div>
+      
+    </section>
+
+<!-----------------------------------------------ACHIEVEMENTS SECTION END---------------------------------------------->
+
+    <section><hr></section>
+
+<!----------------------------------------------------FOOTER START------------------------------------------------------>
+
+    <section style="background-color: rgb(0, 0, 0);">
+      <div class="container">
+        <div class="row">
+          <h6 style="text-align: center; color: rgb(100, 100, 100); padding: 25px 0 20px 0;">Made with &#10084 by Sudhanshu Gupta</h6>
+        </div>        
+      </div>
+    </section>
+
+<!-----------------------------------------------------FOOTER END------------------------------------------------------>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
+
